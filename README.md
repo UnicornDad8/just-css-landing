@@ -23,13 +23,13 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Cecilia Benitez**
 
-- [@Ceci007](https://github.com/Ceci007)
+- [@UnicornDad8](https://github.com/UnicornDad8)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Ceci007/just-css-landing/issues).
+Feel free to check the [issues page](https://github.com/UnicornDad8/just-css-landing/issues).
 
 ## 📝 License
 
