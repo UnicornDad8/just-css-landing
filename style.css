@@ -1,0 +1,263 @@
+/* ---------- BASE ----------- */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-violet: #8e67ff;
+  --color-celeste: #d2dfff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #e9f1f3;
+}
+
+/* ---------- Navbar ----------- */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 95px;
+}
+
+.navbar-left {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle-box {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.circle-box svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+}
+
+.navbar-item {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navbar-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.item-active {
+  color: #000;
+  font-weight: 500;
+}
+
+/* ---------- HERO ----------- */
+.header {
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left {
+  width: 50%;
+  position: relative;
+  padding-left: 155px;
+}
+
+.header-left h2 {
+  font-size: 62px;
+  width: 500px;
+  font-weight: 800;
+}
+
+.header-left span {
+  font-size: 62px;
+  background: linear-gradient(
+    45deg,
+    rgba(142, 103, 255) 25%,
+    rgba(210, 223, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-left::before {
+  content: "Premium \00a0 Product \00a0 \00a0 \00a0 \00a0 - - - - - - - - - - - - - - - - \00a0 \00a0 \00a0 \00a0 Panco \00a0 Store";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  color: #999999;
+  font-size: 14px;
+  writing-mode: vertical-rl;
+  -webkit-transform: rotate(-180deg);
+}
+
+.header-left p {
+  color: #999999;
+  font-size: 14px;
+  margin: 30px 0;
+  width: 300px;
+}
+
+.header-title {
+  width: 300px;
+}
+
+.btn-primary {
+  padding: 15px 30px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    45deg,
+    rgba(130, 37, 249, 1) 25%,
+    rgba(210, 223, 255, 1) 100%
+  );
+  width: max-content;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 20px 60px rgba(130, 37, 249, 0.6);
+}
+
+.header-right {
+  border-radius: 30px;
+  overflow: hidden;
+  width: 48%;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1420px) {
+  .header-left {
+    width: 40%;
+    padding-left: 40px;
+  }
+
+  .header-left::before {
+    left: -40px;
+  }
+
+  .header-left h2 {
+    font-size: 48px;
+  }
+
+  .header-left span {
+    font-size: 48px;
+  }
+
+  .header-right {
+    width: 50%;
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-right {
+    width: 40%;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 30px 0px;
+    margin: 0 auto;
+  }
+
+  .navbar-left {
+    width: 60px;
+    display: block;
+    margin-left: -100px;
+  }
+
+  .header {
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-left {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .header-right {
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar-list,
+  ul {
+    display: none;
+    width: 0;
+    padding: 0;
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+}
