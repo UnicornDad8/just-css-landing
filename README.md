@@ -2,7 +2,7 @@
 
 > This is a page made with HTML and CSS (Vanilla), is a template for a fictional mobile product, is for educational purpuses.
 
-![screenshot](./app_screen.png)
+![screenshot](./app_screenshot.png)
 
 ## 🔧 Built With
 
